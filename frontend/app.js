@@ -1,5 +1,5 @@
 // Backend'imizin adresi
-const API = "http://localhost:8000";
+const API = "https://habit-tracker-ai5e.onrender.com";
 
 // Supabase bağlantısı (Auth için)
 const SUPABASE_URL = "https://nrtrbqillxjnsosrugqh.supabase.co";
