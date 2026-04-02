@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+button {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+button.secondary {
+    background: #e2e8f0;
+    color: #4a5568;
+}
+
+button.secondary:hover {
+    background: #cbd5e0;
+}
+
+.habit-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.habit-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.habit-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.streak {
+    font-size: 14px;
+    color: #f6ad55;
+    font-weight: 600;
+}
+
+button.done {
+    background: #48bb78;
+}
+
+button.done:hover {
+    background: #38a169;
+}
+
+button.delete {
+    background: #fc8181;
+}
+
+button.delete:hover {
+    background: #f56565;
+}
+
+#auth-screen {
+    max-width: 400px;
+    margin: 80px auto;
+}
+
+#auth-screen .card {
+    flex-direction: column;
+}
+
+#main-screen {
+    max-width: 600px;
+    margin: 0 auto;
+}

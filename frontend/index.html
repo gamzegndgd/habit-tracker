@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışkanlık Takip</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <!-- GİRİŞ EKRANI -->
+    <div id="auth-screen">
+        <h1>🎯 Alışkanlık Takip</h1>
+        <div class="card">
+            <input type="email" id="email" placeholder="E-posta">
+            <input type="password" id="password" placeholder="Şifre">
+            <button onclick="login()">Giriş Yap</button>
+            <button onclick="register()" class="secondary">Kayıt Ol</button>
+        </div>
+    </div>
+
+    <!-- ANA EKRAN -->
+    <div id="main-screen" style="display:none">
+        <div class="header">
+            <h1>🎯 Alışkanlıklarım</h1>
+            <button onclick="logout()" class="secondary">Çıkış</button>
+        </div>
+
+        <!-- Alışkanlık Ekle -->
+        <div class="card">
+            <input type="text" id="habit-name" placeholder="Yeni alışkanlık...">
+            <button onclick="addHabit()">Ekle</button>
+        </div>
+
+        <!-- Alışkanlık Listesi -->
+        <div id="habits-list"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
